@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Top Header Css */
+
+.top-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-topnav p {
+    margin-bottom: 0 !important;
+}
+.main-top-nav{
+    background: black;
+    color: white;
+    padding: 10px;
+}
+.right-topnav{
+    display: flex;
+    gap: 25px;
+}
+/* Header Component Css */
+.navlinks{
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navlinks:hover{
+    color: darkslategray;
+}
+.navbar{
+    background-color: #3f8afb !important;
+}
+
+/* Footer Css */
+.footer{
+    background-color: rgb(204 222 239);
+    padding: 50px 5px;
+}
+
+.connect-btn{
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(150, 213, 234);
+    color: #000;
+}
+.connect-btn:hover{
+    background-color: rgb(198, 198, 245);
+}
+.nav-link{
+    text-decoration: none;
+    position: relative;
+    color: black;
+    display: inline-block; 
+}
+.nav-link::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: rgb(134, 131, 131);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after{
+   width: 100%;
+}
+
+
+
+.active{
+    color: #ffc107;
+}
