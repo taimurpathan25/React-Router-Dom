@@ -17,7 +17,7 @@ const Header = () => {
     <Container>
     <div className="top-nav">
       <div className="left-topnav">
-        <p>Hello this side pathan code and i m software developer with the expertise in frontend developer</p>
+        <p>Hello This Side Pathan Code and i m Software Developer with the Expertise in Frontend Developer</p>
       </div>
       <div className="right-topnav">
           <NavLink style={{color:'white', textDecoration:'none', fontWeight:'bold'}} to='/signup'>Sign Up</NavLink>
@@ -28,7 +28,7 @@ const Header = () => {
     </div>
     <Navbar expand="lg" className="bg-body-tertiary navbar">
       <Container>
-       <NavLink to="/"><Navbar.Brand><img style={{borderRadius:'50%', width:'5vw', height:'11vh'}} src="https://yt3.googleusercontent.com/-bf_kwpb1B1Kk-u28M2576raivvnQkBCNy5A-_nCuFeWhJMTCYMmPJZ0FtwYbYIWeiyuv9pU5MQ=s900-c-k-c0x00ffffff-no-rj" alt="Logo" srcset="" /></Navbar.Brand></NavLink> 
+       <NavLink to="/"><Navbar.Brand><img style={{borderRadius:'50%', width:'5vw', height:'11vh'}} src="https://yt3.googleusercontent.com/-bf_kwpb1B1Kk-u28M2576raivvnQkBCNy5A-_nCuFeWhJMTCYMmPJZ0FtwYbYIWeiyuv9pU5MQ=s900-c-k-c0x00ffffff-no-rj" alt="Logo" /></Navbar.Brand></NavLink> 
         <Navbar aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '150px' }} navbarScroll >

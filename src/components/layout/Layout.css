@@ -34,12 +34,12 @@
     color: darkslategray;
 }
 .navbar{
-    background-color: #3f8afb !important;
+    background-color: #6c63ff !important;
 }
 
 /* Footer Css */
 .footer{
-    background-color: rgb(204 222 239);
+    background-color: #6c63ff;
     padding: 50px 5px;
 }
 
@@ -47,11 +47,12 @@
     padding: 10px 10px;
     border-radius: 5px;
     border: none;
-    background-color: rgb(150, 213, 234);
-    color: #000;
+    background-color: #227b61;
+    color: #fff;
+    font-weight: 600;
 }
 .connect-btn:hover{
-    background-color: rgb(198, 198, 245);
+    background-color: rgb(116, 116, 235);
 }
 .nav-link{
     text-decoration: none;
@@ -77,5 +78,5 @@
 
 
 .active{
-    color: #ffc107;
+    color: #60e7bf;
 }

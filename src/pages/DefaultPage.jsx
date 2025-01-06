@@ -1,36 +1,41 @@
 import React from 'react';
 import './Pages.css';
-import { NavLink, useRouteError } from 'react-router-dom';
+import { Link, useNavigate, useRouteError } from 'react-router-dom';
 
 const DefaultPage = () => {
-  console.log(useRouteError())
+  const error = useRouteError();
+  console.log(error);
+
+  const navigate = useNavigate();
+  console.log(navigate)
+  const handleGoBack = () => {
+    navigate(-1)
+  }
+  if(error.status === 404){
   return (
    <>
    <section className="page_404">
-    <div className="container">
-		<div className="row">	
-		<div className="col-sm-12 ">
-		{/* <div className="col-sm-10 col-sm-offset-1  text-center"> */}
-		<div className="four_zero_four_bg">
-			<img src="https://cdn.dribbble.com/users/722246/screenshots/3066818/404-page.gif" alt="404 Notfound Image" />
-		</div>
-		
-		<div className="contant_box_404 text-center">
-		<h3 className="h2">
-		Look like you're lost
-		</h3>
-		
-		<p>the page you are looking for not avaible!</p>
-		
-		<NavLink to='/' className="link_404">Go to Home</NavLink>
-	</div>
-		{/* </div> */}
-		</div>
-		</div>
-    </div>
+    {/* <div className="container"> */}
+	<div class="error-page-container">
+    <img src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/page_not_found_su7k.svg" alt="404"/>
+    
+    <h4>
+      Oopps! The page you were looking doesn't exist.
+    </h4>
+    
+    {/* <p>
+      <Link to='/' class="button">
+        Go to home page
+      </Link>
+    </p> */}
+    <button className='button' onClick={handleGoBack}>Go Back</button>
+    
+  </div>
+    {/* </div> */}
 </section>
    </>
   )
+}
 }
 
 export default DefaultPage
