@@ -6,6 +6,7 @@ import {AllMedicine} from './pages/AllMedicine';
 import Contact from './pages/Contact';
 import AppLayout from './components/layout/AppLayout';
 import DefaultPage from './pages/DefaultPage';
+import { getAPIMedicineData } from './API/GetAPIMedicineData';
 
 
 const App = () => {
@@ -29,7 +30,8 @@ const App = () => {
         },
         {
           path:'all-medicine',
-          element:<AllMedicine/>
+          element:<AllMedicine/>,
+          loader:getAPIMedicineData
         },
         {
           path:'contact-us',
