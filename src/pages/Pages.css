@@ -1,6 +1,6 @@
 
 /*======================
-    404 page
+   Start 404 page CSS
 =======================*/
 
 
@@ -62,4 +62,18 @@
   .error-page-container .button:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   }
+  /*======================
+    End 404 page CSS
+=======================*/
   
+/*======================
+    Start main section data CSS
+=======================*/
+
+  .main-section img{
+    width: 60vw;
+    height: 30vh;
+  }
+  /*======================
+    End main section data CSS
+=======================*/

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import { useLoaderData } from 'react-router-dom'
+import { Link, useLoaderData } from 'react-router-dom'
 
 export const AllMedicine = () => {
   const medicineData = useLoaderData();
@@ -11,18 +11,19 @@ export const AllMedicine = () => {
     
     {
       medicineData && medicineData.hits ? 
-      <div className="row">
-    <div className="col-md-4">
-        <ul>
+        <div className='row'>
         {medicineData.hits.map((item,index)=>(
-          <li key={index}>
+          <div className='col-md-3' key={index}>
+            <div className="main-section">
+              <Link to={`/medicineDetail/${item.id}`}>
             <img src={item.previewURL} alt={item.tags} />
+            {/* <h1>Id : {item.id}</h1> */}
             <p>{item.tags}</p>
-          </li>
+            </Link>
+          </div>
+          </div>
         ))}
-      </ul>
-      </div>
-      </div> :  <p>No data available</p>
+      </div> : <p>No data available</p>
     }
     
     </Container>

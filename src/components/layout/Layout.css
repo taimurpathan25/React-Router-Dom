@@ -80,3 +80,34 @@
 .active{
     color: #60e7bf;
 }
+
+
+
+/* Loading CSS */
+.delay_1 {
+    animation-delay: 100ms !important;
+  }
+  
+  .delay_2 {
+    animation-delay: 200ms !important;
+  }
+  
+  .delay_3 {
+    animation-delay: 300ms !important;
+  }
+  
+  .delay_4 {
+    animation-delay: 400ms !important;
+  }
+  
+  .delay_5 {
+    animation-delay: 500ms !important;
+  }
+  
+  .delay_6 {
+    animation-delay: 600ms !important;
+  }
+  
+  .delay_7 {
+    animation-delay: 700ms !important;
+  }

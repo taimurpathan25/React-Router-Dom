@@ -7,6 +7,7 @@ import Contact from './pages/Contact';
 import AppLayout from './components/layout/AppLayout';
 import DefaultPage from './pages/DefaultPage';
 import { getAPIMedicineData } from './API/GetAPIMedicineData';
+import MedicineDetail from './pages/details-page/MedicineDetail';
 
 
 const App = () => {
@@ -31,6 +32,11 @@ const App = () => {
         {
           path:'all-medicine',
           element:<AllMedicine/>,
+          loader:getAPIMedicineData
+        },
+        {
+          path:'medicineDetail/:id',
+          element:<MedicineDetail/>,
           loader:getAPIMedicineData
         },
         {
