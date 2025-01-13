@@ -17,7 +17,7 @@ const MedicineDetail = () => {
   return (
     <div className="image-detail">
       <h1>Image Detail</h1>
-      <img src={image.largeImageURL} alt={image.tags} style={{ width: '100%' }} />
+      <img src={image.largeImageURL} alt={image.tags} style={{ width: '30%' }} />
       <p><strong>Tags:</strong> {image.tags}</p>
       {/* Add more details if needed */}
     </div>

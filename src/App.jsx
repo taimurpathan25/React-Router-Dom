@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import {AllMedicine} from './pages/AllMedicine';
-import Contact from './pages/Contact';
+import Contact, { contactData } from './pages/Contact';
 import AppLayout from './components/layout/AppLayout';
 import DefaultPage from './pages/DefaultPage';
 import { getAPIMedicineData } from './API/GetAPIMedicineData';
@@ -41,7 +41,8 @@ const App = () => {
         },
         {
           path:'contact-us',
-          element:<Contact/>
+          element:<Contact/>,
+          action:contactData
         }
       ]
     },
